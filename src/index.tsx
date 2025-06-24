@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './assets/i18n';
 import Gacha from './App';
 
 const root = ReactDOM.createRoot(

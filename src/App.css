@@ -145,3 +145,85 @@
     box-shadow: 0 0 20px #ff8a00, 0 0 30px #ff8a00, 0 0 40px #ff8a00;
   }
 }
+
+.menu-btn {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 1001;
+  background: #fff;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: background 0.2s;
+}
+.menu-btn:hover {
+  background: #fbc2eb;
+}
+.lang-switch {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 1001;
+}
+.lang-switch button {
+  margin-left: 4px;
+  background: #fff;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  padding: 0.3rem 0.7rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.10);
+  transition: background 0.2s;
+}
+.lang-switch button:disabled {
+  background: #a6c1ee;
+  color: #fff;
+  cursor: default;
+}
+.modal-bg {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  min-width: 320px;
+  max-width: 90vw;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+}
+.modal h2 {
+  margin-top: 0;
+}
+.modal table {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+}
+.modal th, .modal td {
+  border-bottom: 1px solid #eee;
+  padding: 0.3rem 0.5rem;
+  text-align: left;
+}
+.modal input[type="text"], .modal input[type="number"] {
+  width: 90%;
+  padding: 0.2rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.modal button {
+  margin-right: 0.5rem;
+  margin-top: 0.3rem;
+}
