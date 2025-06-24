@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import html2canvas from 'html2canvas';
 import "./App.css"
 import { useTranslation } from 'react-i18next';
@@ -22,7 +22,7 @@ const LANGS = [
 ];
 
 const Gacha = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const resultRef = useRef(null);
   const [result, setResult] = useState<string | undefined>();
   const [rarity, setRarity] = useState<string | undefined>();
